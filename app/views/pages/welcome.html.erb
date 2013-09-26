@@ -1,9 +1,6 @@
-<h1>Welcome</h1>
+<% @posts.each do |post| %>
+	<%= render 'posts/post', post: post %>
 
-<p>
-	This is the landing page for Crumblr, a baking blog made using RUby on Rails
-</p>
-
-<p>
-	This Page is just a placeholder. Later on, we'll replace it with the posts in our blog.
-</p>
+	<br><br><br><br>
+	
+		<% end %>
